@@ -37,19 +37,20 @@ export const Dropdown = () => {
         <label>Ph-No: </label>
 
         <select value={data.value} onChange={handleChange}>
+          <option selectedvalue="india">
+            India (+91)
+            <img src={img2.default} width="25" height="15" />
+          </option>
           <option value="uk">UK (+44){pics.pic2}</option>
           <option value="usa">
             USA (+1)
             <img src={img1} alt="Image unavailable" width="50" height="30" />
           </option>
-          <option selectedvalue="india">
-            India (+91)
-            <img src={img2.default} width="25" height="15" />
-          </option>
+
           {morepics.map((pic) => {
             return (
               <option>
-                Mexico
+                Mexico (+52)
                 {pic.img1}
               </option>
             );
@@ -57,7 +58,7 @@ export const Dropdown = () => {
           {morepics.map((pic) => {
             return (
               <option>
-                China
+                China (+86)
                 <img src={img1} alt="not found" />
               </option>
             );
