@@ -33,13 +33,6 @@ export const Dropdown = () => {
 
   return (
     <div>
-      <img src={img1} alt="Image unavailable" width="50" height="30" />
-      <br />
-      <img src={img2.default} width="100" height="60" />
-      <br />
-      <img src={pics.pic1} alt="not found" />
-      <br />
-      <img src={pics.pic2} width="100" height="60" />
       <form onSubmit={handleSubmit}>
         <label>Ph-No: </label>
 
